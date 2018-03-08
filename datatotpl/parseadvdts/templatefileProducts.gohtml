@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> List of products from MDB </title>
+</head>
+
+<body>
+<ul>
+    {{range .}}
+    <li> Product {{.Product}} is in category {{.Category}} </li>
+    {{end}}
+</ul>
+</body>

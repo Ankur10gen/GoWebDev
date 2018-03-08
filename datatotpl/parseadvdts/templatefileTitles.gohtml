@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> List of Some Executives from MDB </title>
+</head>
+
+<body>
+    <ul>
+    {{ range $key, $value := . }}
+        <li>The {{$key}} of MongoDB is {{$value}}</li>
+    {{end}}
+    </ul>            
+</body>
