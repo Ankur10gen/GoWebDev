@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title> Built-in Functions </title>
+</head>
+
+<body>
+
+<h1> Below is the list of cars: </h1>
+
+{{index . 1}}
+{{index . 0}}
+{{index . 2}}
+
+{{range .}}
+    <h2>{{.}}</h2>
+    {{if eq . "i10"}}
+        Found i10
+    {{end}}
+{{end}}
+
+</body>
